@@ -1,0 +1,42 @@
+.hero-container {
+    position: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure the video covers the entire viewport height */
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+.hero-video {
+    width: 100%; /* Ensure the video fills the entire width */
+    height: auto; /* Maintain the video's aspect ratio */
+    object-fit: cover; /* Scale the video to cover the entire container */
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif; 
+    text-align: center;
+    color: #fff;
+    z-index: 1; /* Ensure text is above video */
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
