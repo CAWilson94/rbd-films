@@ -15,7 +15,7 @@ const HeroSection = () => {
     <div>
       <NavBar />
       {/* Hero Section with Video Background */}
-      <div className="fixed top-0 left-0 w-full overflow-hidden z-10">
+      <div className="fixed h-screen top-0 left-0 w-full overflow-hidden z-10">
         {!videoError ? (
           <video
             autoPlay
