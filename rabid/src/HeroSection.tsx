@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./HeroSection.css"; // Import CSS for styling
 import videoSrc from "./assets/storr.mp4";
 import NavBar from "./NavBar";
+import "./App.css";
 
 const HeroSection = () => {
   const [videoError, setVideoError] = useState(false);
@@ -35,9 +36,12 @@ const HeroSection = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20"></div>
         {/* Text Overlay and Mask */}
 
-        <div className="tracking-wider font-bebas sm:text-base md:text-4xl  lg:text-6xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-30">          
-            <h2>UK Based Director & Filmaker</h2>
+        <div className="absolute top-1/2 left-0 w-full flex items-center justify-center text-center text-white z-30">
+          <h2 className="tracking-wider font-bebas sm:text-base md:text-4xl  lg:text-6xl ">UK Based Director & Filmaker</h2>        
         </div>
+        <a href="#nextSection" className="absolute pb-10 bottom-0 left-1/2 transform -translate-x-1/2 text-white  z-40">
+            <span className="arrow down"></span>
+          </a>
       </div>
     </div>
   );
